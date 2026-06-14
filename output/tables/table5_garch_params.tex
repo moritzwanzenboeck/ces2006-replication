@@ -1,0 +1,59 @@
+\begin{table}[H]
+\centering
+\caption{Univariate GARCH estimates}
+\label{tab:garch_params}
+\begin{threeparttable}
+\begin{tabular}{llSSSS}
+\toprule
+Asset & Model & \multicolumn{1}{c}{$\omega$} & \multicolumn{1}{c}{$\alpha$} & \multicolumn{1}{c}{$\lambda$ or $\gamma$} & \multicolumn{1}{c}{$\beta$} \\
+\midrule
+\multicolumn{6}{l}{\textit{Equities:}} \\
+\hspace{1em}Australia & NAGARCH & 0.0001 & 0.1705 & -0.6254 & 0.6999 \\
+\hspace{1em}Austria & GJR-GARCH & 0.0001 & 0.0485 & 0.2211 & 0.7579 \\
+\hspace{1em}Belgium & EGARCH & -1.1136 & 0.2916 & -0.1757 & 0.8783 \\
+\hspace{1em}Canada & NAGARCH & 0.0001 & 0.1960 & -0.6240 & 0.6655 \\
+\hspace{1em}Denmark & ZARCH & 0.0027 & 0.0701 & 0.1595 & 0.7954 \\
+\hspace{1em}France & NAGARCH & 0.0001 & 0.1433 & -1.0306 & 0.6365 \\
+\hspace{1em}Germany & NAGARCH & 0.0001 & 0.1328 & -0.9651 & 0.6842 \\
+\hspace{1em}Hong Kong & NAGARCH & 0.0000 & 0.0934 & -0.5780 & 0.8353 \\
+\hspace{1em}Ireland & NAGARCH & 0.0001 & 0.1603 & -0.6967 & 0.6757 \\
+\hspace{1em}Italy & NAGARCH & 0.0001 & 0.1439 & -0.8919 & 0.6773 \\
+\hspace{1em}Japan & NAGARCH & 0.0000 & 0.1116 & -0.6975 & 0.7620 \\
+\hspace{1em}Mexico & NAGARCH & 0.0001 & 0.1166 & -0.8866 & 0.6952 \\
+\hspace{1em}Netherlands & NAGARCH & 0.0001 & 0.1311 & -0.9079 & 0.6972 \\
+\hspace{1em}New Zealand & GJR-GARCH & 0.0000 & 0.0080 & 0.1125 & 0.8759 \\
+\hspace{1em}Norway & NAGARCH & 0.0001 & 0.1468 & -0.4122 & 0.7644 \\
+\hspace{1em}Singapore & ZARCH & 0.0016 & 0.0611 & 0.1524 & 0.8341 \\
+\hspace{1em}Spain & NAGARCH & 0.0001 & 0.1254 & -0.8350 & 0.7232 \\
+\hspace{1em}Sweden & GJR-GARCH & 0.0001 & 0.0099 & 0.2139 & 0.8272 \\
+\hspace{1em}Switzerland & EGARCH & -1.3776 & 0.2684 & -0.2190 & 0.8468 \\
+\hspace{1em}United Kingdom & NAGARCH & 0.0001 & 0.1804 & -0.9367 & 0.5852 \\
+\hspace{1em}United States & NAGARCH & 0.0001 & 0.1392 & -1.4175 & 0.4864 \\
+\midrule
+\multicolumn{6}{l}{\textit{Bonds:}} \\
+\hspace{1em}Australia & EGARCH & -1.3462 & 0.3359 & -0.0840 & 0.8665 \\
+\hspace{1em}Austria & GARCH & 0.0000 & 0.1039 & {} & 0.8693 \\
+\hspace{1em}Belgium & GARCH & 0.0000 & 0.1147 & {} & 0.8579 \\
+\hspace{1em}Canada & GARCH & 0.0000 & 0.0866 & {} & 0.8867 \\
+\hspace{1em}Denmark & GARCH & 0.0000 & 0.1060 & {} & 0.8614 \\
+\hspace{1em}France & GARCH & 0.0000 & 0.1072 & {} & 0.8635 \\
+\hspace{1em}Germany & GARCH & 0.0000 & 0.1074 & {} & 0.8585 \\
+\hspace{1em}Ireland & GARCH & 0.0000 & 0.1132 & {} & 0.8746 \\
+\hspace{1em}Italy & NAGARCH & 0.0000 & 0.0890 & -0.3099 & 0.8728 \\
+\hspace{1em}Japan & GARCH & 0.0000 & 0.0740 & {} & 0.8871 \\
+\hspace{1em}Netherlands & GARCH & 0.0000 & 0.0930 & {} & 0.8811 \\
+\hspace{1em}New Zealand & NAGARCH & 0.0000 & 0.0898 & -0.5627 & 0.7886 \\
+\hspace{1em}Norway & GARCH & 0.0000 & 0.0827 & {} & 0.8740 \\
+\hspace{1em}Spain & GARCH & 0.0000 & 0.1053 & {} & 0.8713 \\
+\hspace{1em}Sweden & GARCH & 0.0000 & 0.0804 & {} & 0.8819 \\
+\hspace{1em}Switzerland & AVGARCH & 0.0012 & 0.1323 & {} & 0.8300 \\
+\hspace{1em}United Kingdom & GARCH & 0.0000 & 0.1763 & {} & 0.7383 \\
+\hspace{1em}United States & GARCH & 0.0000 & 0.0837 & {} & 0.8829 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\small
+\item Stage-1 BIC-selected GARCH model and parameter estimates for weekly USD log returns. $\lambda$ or $\gamma$: power or asymmetry parameter (model-dependent); blank if absent. Parameters mapped to CES~(2006) notation: EGARCH --- $\alpha$ and $\gamma$ exchanged relative to rugarch; $\omega_{\text{cap}}=\omega_{\text{ru}}-\gamma_{\text{ru}}\sqrt{2/\pi}$. ZARCH --- $\alpha_{\text{cap}}=\alpha(1-\eta_{11})$, $\gamma_{\text{cap}}=2\alpha\eta_{11}$. APARCH --- $\alpha_{\text{cap}}=\alpha(1-\gamma)^\delta$, $\gamma_{\text{cap}}=\alpha(1+\gamma)^\delta-\alpha_{\text{cap}}$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

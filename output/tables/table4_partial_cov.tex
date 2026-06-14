@@ -1,0 +1,46 @@
+\begin{table}[H]
+\centering
+\small
+\caption{Covariance asymmetry tests}
+\label{tab:partial_cov}
+\begin{threeparttable}
+\begin{tabular}{lSSSS}
+\toprule
+ & \multicolumn{1}{c}{Overall} & \multicolumn{1}{c}{Intrastock} & \multicolumn{1}{c}{Intrabond} & \multicolumn{1}{c}{Interstock-bond} \\
+\midrule
+Significant at 10\% & 0.815 & 1.000 & 0.261 & 0.937 \\
+Significant at 20\% & 0.874 & 1.000 & 0.503 & 0.955 \\
+\cmidrule(l){2-5}
+& \multicolumn{4}{l}{\textit{Stocks only}} \\
+\cmidrule(l){2-5}
+&  & \multicolumn{1}{c}{Australasia} & \multicolumn{1}{c}{Europe} & \multicolumn{1}{c}{N.~America} \\
+\cmidrule(l){3-5}
+ & \multicolumn{1}{l}{\hspace{1em}Australasia} & 1.000 & {} & {} \\
+ & \multicolumn{1}{l}{\hspace{1em}Europe} & 1.000 & 1.000 & {} \\
+ & \multicolumn{1}{l}{\hspace{1em}N.~America} & 1.000 & 1.000 & 1.000 \\
+\cmidrule(l){2-5}
+& \multicolumn{4}{l}{\textit{Bonds only}} \\
+\cmidrule(l){2-5}
+&  & \multicolumn{1}{c}{Australasia} & \multicolumn{1}{c}{Europe} & \multicolumn{1}{c}{N.~America} \\
+\cmidrule(l){3-5}
+ & \multicolumn{1}{l}{\hspace{1em}Australasia} & 0.333 & {} & {} \\
+ & \multicolumn{1}{l}{\hspace{1em}Europe} & 0.359 & 0.179 & {} \\
+ & \multicolumn{1}{l}{\hspace{1em}N.~America} & 0.667 & 0.231 & 1.000 \\
+\cmidrule(l){2-5}
+& \multicolumn{1}{l}{\textit{Across stocks -- bonds}} & \multicolumn{3}{c}{Stocks} \\
+\cmidrule(l){2-5}
+& &  
+\multicolumn{1}{c}{Australasia} & \multicolumn{1}{c}{Europe} & \multicolumn{1}{c}{N.~America} 
+\\ 
+\cmidrule(l){3-5}
+ & \multicolumn{1}{l}{\hspace{1em}Australasia} & 0.667 & 0.718 & 0.667 \\
+Bonds & \multicolumn{1}{l}{\hspace{1em}Europe} & 0.954 & 0.988 & 1.000 \\
+ & \multicolumn{1}{l}{\hspace{1em}N.~America} & 1.000 & 1.000 & 1.000 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\small
+\item Proportion of the $C(39,2)=741$ asset pairs rejecting $H_0\colon\beta_{--}=\beta_{++}$ in the regression $\varepsilon_{it}\varepsilon_{jt}=\alpha+\beta_{--}I_{--,t}+\beta_{++}I_{++,t}+u_t$, where $I_{--,t}$ ($I_{++,t}$) indicates joint negative (positive) shocks. Newey--West HAC standard errors. Top panel: proportions by group at 10\% and 20\% levels. Regional panels: 10\% level; lower-triangular for within-class, full matrix for cross-class.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

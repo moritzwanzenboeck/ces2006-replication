@@ -1,0 +1,21 @@
+\begin{table}[H]
+\centering
+\caption{Rank of the three-stage score covariance $\hat{\mathbf{B}}_0$}
+\label{tab:vcv_rank}
+\begin{threeparttable}
+\begin{tabular}{lSSSSc}
+\toprule
+Model & \multicolumn{1}{c}{$n_1$} & \multicolumn{1}{c}{$n_2$} & \multicolumn{1}{c}{$n_3$} & \multicolumn{1}{c}{$n_{\mathrm{tot}}$} & Rank-deficient \\
+\midrule
+DCC & 143 & 741 & 2 & 886 & No \\
+ADCC & 143 & 1521 & 3 & 1667 & Yes \\
+GDCC & 143 & 741 & 78 & 962 & No \\
+AGDCC & 143 & 1521 & 117 & 1781 & Yes \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\small
+\item $n_{\mathrm{tot}} = n_1 + n_2 + n_3$, with $T = 1{,}355$. The mean term $\mu$ is excluded from $n_1$. $\hat{\mathbf{B}}_0 = T^{-1}S'S$ has rank $\leq \min(T, n_{\mathrm{tot}})$, so it is rank-deficient when $n_{\mathrm{tot}} > T$, with at least $n_{\mathrm{tot}} - T$ zero eigenvalues (here 312 for ADCC, 426 for AGDCC).
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

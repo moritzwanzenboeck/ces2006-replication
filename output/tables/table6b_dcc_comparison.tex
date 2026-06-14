@@ -1,0 +1,21 @@
+\begin{table}[H]
+\centering
+\caption{DCC model comparison}
+\label{tab:dcc_comparison}
+\begin{threeparttable}
+\begin{tabular}{lSSS}
+\toprule
+Model & \multicolumn{1}{c}{$np$} & \multicolumn{1}{c}{LL} & \multicolumn{1}{c}{BIC} \\
+\midrule
+DCC & 2 & 14779.2 & -29544.051 \\
+ADCC & 3 & 14862.0 & -29702.441 \\
+GDCC & 78 & 16143.1 & -31723.723 \\
+AGDCC & 117 & 16279.4 & -31714.997 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\small
+\item LL: Stage-3 quasi-log-likelihood. BIC: $np\cdot\ln T - 2\,\text{LL}$, $T=1{,}355$. All LR tests vs.\ DCC reject at $p<0.001$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
